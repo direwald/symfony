@@ -16,7 +16,7 @@ class QuestionController extends AbstractController {
     }
 
     /**
-     * @Route("/questions/{slug}", name="app_question_show")
+     * @Route("/questions/{slug}")
      */
     public function show($slug) {
 
