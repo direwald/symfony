@@ -19,17 +19,9 @@ class QuestionController extends AbstractController {
      * @Route("/questions/{slug}")
      */
     public function show($slug) {
-
-        $answers = [
-            'Answer 1',
-            'Answer 2',
-            'Answer 3',
-        ];
-
-        return $this->render('question/show.html.twig', [
-            'question' => ucwords(str_replace('-', ' ', $slug)),
-            'answers' => $answers
-        ]);
-
+        return new Response(sprintf(
+            'Future page to show the question "%s"!',
+            ucwords(str_replace('-', ' ', $slug))
+        ));
     }
 }
