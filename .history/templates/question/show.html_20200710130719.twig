@@ -45,19 +45,14 @@
                         {{ answer }}
                         <p>-- Mallory</p>
                     </div>
-                    <div class="vote-arrows flex-fill pt-2 js-vote-arrows" style="min-width: 90px;">
+                    <div class="vote-arrows flex-fill pt-2 js-vote-arros" style="min-width: 90px;">
                         <a class="vote-up" data-direction="up" href="#"><i class="far fa-arrow-alt-circle-up"></i></a>
                         <a class="vote-down" data-direction="down" href="#"><i class="far fa-arrow-alt-circle-down"></i></a>
-                        <span>+ <span class="js-vote-total">6</span></span>
+                        <span>+ 6</span>
                     </div>
                 </div>
             </li>
         {% endfor %}
     </ul>
 </div>
-{% endblock %}
-
-{% block javascripts %}
-    {{ parent() }}
-    <script src="{{ asset('js/question_show.js') }}"></script>
 {% endblock %}
